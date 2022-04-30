@@ -71,14 +71,15 @@
     height: 30%;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 1%;
 }
 
 .buttons button{
     width: auto;
     height: 100%;
-    padding: 2%;
-    margin-right: 1%;
+    padding: 1%;
+    margin-right: 2%;
     background-color: #369457;
     font-family: 'Courier New', Courier, monospace;
     font-size: 100%;
