@@ -5,11 +5,20 @@ export const useCounter = ( initialState = 1 ) =>{
     const [counter, setCounter ] = useState(initialState);
 
     const incrementer = () => {
-        setCounter( counter + 1 );
+        if(counter === 30){
+            setCounter( 1 );
+        }else{
+            setCounter( counter + 1 )
+        }
+        
     }
 
     const decrementer = () => {
-        setCounter( counter - 1 );
+       if( counter === 1){
+           setCounter( 30 )
+       }else{
+           setCounter( counter - 1 )
+       }
     }
 
     const reset = () => {
